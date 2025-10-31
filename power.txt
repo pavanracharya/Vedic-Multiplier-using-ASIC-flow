@@ -1,0 +1,234 @@
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    VDD
+    0.90V	    VSS
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: project
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'project' of instances=793 and nets=645 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design project.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1475.082M)
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1475.08)
+Total number of fetched objects 641
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=1531.98 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1531.98 CPU=0:00:00.1 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+    0.00V	    VDD
+    0.90V	    VSS
+
+Warning:
+  There are 2 power/gnd nets that are not connected
+VDD VSS ...
+Use 'globalNetConnect' to define rail connections.
+** WARN:  (VOLTUS_POWR-2035): There are 2 power/gnd nets that are not connected
+VDD VSS ...
+Use 'globalNetConnect' to define rail connections.
+
+
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.16MB/1188.16MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(500MHz) CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.25MB/1188.25MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.30MB/1188.30MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 10%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 20%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 30%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 40%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 50%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 60%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 70%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 80%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 90%
+
+Finished Levelizing
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+
+Starting Activity Propagation
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 10%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 20%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 30%
+
+Finished Activity Propagation
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.52MB/1188.52MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+ ... Calculating switching power
+  instance vm/u0_u2/ha1/FE_OCPC53_w2 is not connected to any rail
+  instance vm/FE_OCPC52_n_205 is not connected to any rail
+  instance vm/FE_OCPC51_n_25 is not connected to any rail
+  instance vm/csa_tree_add_69_22_groupi_g1328__7118_dup1 is not connected
+to any rail
+  instance vm/u2_u1/ha1/FE_OCPC49_w1 is not connected to any rail
+  only first five unconnected instances are listed...
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 10%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 20%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 30%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 40%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 50%
+ ... Calculating internal and leakage power
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 60%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 70%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 80%
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT): 90%
+
+Finished Calculating power
+2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.86MB/1188.86MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.91MB/1188.91MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total)=1188.92MB/1188.92MB)
+
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2025-May-19 05:05:01 (2025-May-18 23:35:01 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: project
+*
+*	Liberty Libraries used:
+*	        WC_ANALYSIS: ../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+*
+*	Power Domain used:
+*
+*       Power View : WC_ANALYSIS
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.98699897 	   69.9652%
+Total Switching Power:       0.39076804 	   27.7003%
+Total Leakage Power:         0.03293240 	    2.3345%
+Total Power:                 1.41069940
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.1837    0.001286    0.001934       0.187       13.25
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                     0.8033      0.3895       0.031       1.224       86.75
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              0.987      0.3908     0.03293       1.411         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                   0.9      0.987      0.3908     0.03293       1.411         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power: vm/csa_tree_add_69_22_groupi_g1264__2703 (NOR2X4): 	    0.0193
+* 		Highest Leakage Power:             vm/u1_u3/fopt (CLKINVX20): 	 0.0002515
+* 		Total Cap: 	6.52516e-12 F
+* 		Total instances in design:   613
+* 		Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1189.15MB/1189.15MB)
+
+1
+
